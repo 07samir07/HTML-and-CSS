@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgb(221, 220, 220);
+}
+.social-container {
+  display: flex;
+  gap: 20px;
+}
+.social-container a {
+  padding: 1em;
+  border-radius: 50%;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  place-items: center;
+  display: grid;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+.social-container a i {
+  height: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 40px; /* change number for size */
+  /* this uses your inline CSS variable */
+  transition: transform 0.3s ease;
+}
+
+.social-container a::before {
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.05);
+  padding: 0.5em 1em;
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms ease;
+}
+.social-container a:hover {
+  background-color: var(--accent-color);
+  fill: white;
+}
+.social-container a::after {
+  content: ;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms ease;
+}
+.social-container a:hover::before {
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+.social-container a:hover::after {
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
