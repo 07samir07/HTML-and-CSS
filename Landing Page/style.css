@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.body {
+  background: url(tron_legacy_light_cycle-wallpaper-1920x1200.jpg);
+  height: 100vh;
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  justify-content: space-around;
+  display: flex;
+}
+.logo {
+  font-size: 3rem;
+}
+.nav {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.nav a {
+  text-decoration: none;
+}
+.premium {
+  margin-top: 30px;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  text-align: center;
+  flex-direction: column;
+}
+.title h1 {
+  font-size: 80px;
+  letter-spacing: 20px;
+  font-weight: bold;
+}
+.title-content {
+  margin-top: 15px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+footer {
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+  margin: 0px;
+  height: calc(100vh - 80px -40px);
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  gap: 300px;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
