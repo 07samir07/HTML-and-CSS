@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick=" let randomNumber=Math.random()*3; //THIS WILL GENERATE RANDOM NUMBER BETWEEEN 0 AND 3
+  let computerChoice;
+  if(randomNumber>0 && randomNumber<=1){
+    computerChoice = 'Bat'
+    //console.log('Computer choice is Bat')
+  }else if(randomNumber > 1 && randomNumber<=2 ){
+    computerChoice ='Ball'
+    //console.log('Computer choice is Bat')
+  }else{
+    computerChoice='Stump'
+    //console.log('Computer choice is Stump')
+  }
+  //let computerChoiceMsg;
+  let resultMsg;
+  if(computerChoice === 'Ball'){
+    resultMsg='User won'
+  }else if(computerChoice==='Bat'){
+    resultMsg='it is a tie'
+  }else if(computerChoice==='Stump'){
+      resultMsg='Computer has won'
+  }
+
+  alert(`You have chosen bat. Computer choice is ${computerChoice} and result is ${resultMsg}`);
+  
+  ">Bat</button>
+
+
+  <!--BALL SECTION-->
+  <button onclick="randomNumber=Math.random()*3; //THIS WILL GENERATE RANDOM NUMBER BETWEEEN 0 AND 3
+  if(randomNumber>0 && randomNumber<=1){
+    computerChoice = 'Bat'
+    //console.log('Computer choice is Bat')
+  }else if(randomNumber > 1 && randomNumber<=2 ){
+    computerChoice ='Ball'
+    //console.log('Computer choice is Bat')
+  }else{
+    computerChoice='Stump'
+    //console.log('Computer choice is Stump')
+  }
+  if(computerChoice === 'Ball'){
+    resultMsg='it is a tie'
+  }else if(computerChoice==='Bat'){
+    resultMsg='Computer has won'
+  }else if(computerChoice==='Stump'){
+      resultMsg='User won'
+  }
+
+  alert(`You have chosen Ball. Computer choice is ${computerChoice} and result is ${resultMsg}`);
+  
+  ">Ball</button>
+
+
+
+
+
+
+
+  <!--STUMP BUTTON-->
+  <button onclick="randomNumber=Math.random()*3; //THIS WILL GENERATE RANDOM NUMBER BETWEEEN 0 AND 3
+  if(randomNumber>0 && randomNumber<=1){
+    computerChoice = 'Bat'
+    //console.log('Computer choice is Bat')
+  }else if(randomNumber > 1 && randomNumber<=2 ){
+    computerChoice ='Ball'
+    //console.log('Computer choice is Bat')
+  }else{
+    computerChoice='Stump'
+    //console.log('Computer choice is Stump')
+  }
+  if(computerChoice === 'Ball'){
+    resultMsg='Computer has won'
+  }else if(computerChoice==='Bat'){
+    resultMsg='User has won'
+  }else if(computerChoice==='Stump'){
+      resultMsg='It is a tie'
+  }
+
+  alert(`You have chosen stump. Computer choice is ${computerChoice} and result is ${resultMsg}`);
+  
+  ">Stump</button>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
