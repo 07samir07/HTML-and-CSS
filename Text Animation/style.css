@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+svg path{
+    fill: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 0.1 ;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    animation: textAnimation 4s ease-in-out 1 forwards ; 
+}
+@keyframes textAnimation{
+    0%{
+        stroke-dashoffset: 360;
+    }
+    80%{
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
