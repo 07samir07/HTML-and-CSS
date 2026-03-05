@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+.slider ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: max-content;
+    animation: runSlider 5s linear infinite;
+}
+.slider img{
+    height: 15px;
+    margin-right: 10px;
+}
+.slider li{
+    width: 150px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    justify-content: start;
+    padding: 10px 0px 10px 10px;
+    margin-right: 5px;
+}
+.slider{
+    overflow: hidden;
+
+}
+@keyframes runSlider{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(165px * 5));
+    }
+}
